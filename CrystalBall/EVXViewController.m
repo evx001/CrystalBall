@@ -17,13 +17,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
+
+// frames demo
+//-(void)viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:animated];
+//
+//    CGRect frame = self.predictionLabel.frame;
+//    self.predictionLabel.frame= CGRectMake(frame.origin.x, frame.origin.y, frame.size.width,frame.size.height);
+//}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+// created with viewController.h (IB)Action ....
+- (IBAction)buttonPressed {
+    self.predictionLabel.text = @"YES";
+    NSLog(@"\nButtonPressed");
+}
 @end
