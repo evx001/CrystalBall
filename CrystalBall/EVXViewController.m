@@ -33,9 +33,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+// [lblRow setTextColor: [UIColor redColor]];
 // created with viewController.h (IB)Action ....
 - (IBAction)buttonPressed {
     self.predictionLabel.text = @"YES";
+    self.predictionLabel.textColor = [UIColor redColor];
+    
     NSLog(@"\nButtonPressed");
 }
 @end
