@@ -21,6 +21,7 @@
 		6003A7761957A00600B9B8C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003A7581957A00600B9B8C9 /* UIKit.framework */; };
 		6003A77E1957A00600B9B8C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003A77C1957A00600B9B8C9 /* InfoPlist.strings */; };
 		6003A7801957A00600B9B8C9 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003A77F1957A00600B9B8C9 /* CrystalBallTests.m */; };
+		607FD1E619598EC6003442DD /* CIMG0364 copy.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 607FD1E519598EC6003442DD /* CIMG0364 copy.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		6003A77B1957A00600B9B8C9 /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		6003A77D1957A00600B9B8C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003A77F1957A00600B9B8C9 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		607FD1E519598EC6003442DD /* CIMG0364 copy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CIMG0364 copy.JPG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				6003A7661957A00600B9B8C9 /* Main.storyboard */,
 				6003A7691957A00600B9B8C9 /* EVXViewController.h */,
 				6003A76A1957A00600B9B8C9 /* EVXViewController.m */,
+				607FD1E519598EC6003442DD /* CIMG0364 copy.JPG */,
 				6003A76C1957A00600B9B8C9 /* Images.xcassets */,
 				6003A75B1957A00600B9B8C9 /* Supporting Files */,
 			);
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607FD1E619598EC6003442DD /* CIMG0364 copy.JPG in Resources */,
 				6003A76D1957A00600B9B8C9 /* Images.xcassets in Resources */,
 				6003A75F1957A00600B9B8C9 /* InfoPlist.strings in Resources */,
 				6003A7681957A00600B9B8C9 /* Main.storyboard in Resources */,
