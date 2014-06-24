@@ -36,7 +36,18 @@
 // [lblRow setTextColor: [UIColor redColor]];
 // created with viewController.h (IB)Action ....
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
+    NSArray *predictions = [[NSArray alloc]initWithObjects:@"It is a Certainty",
+                            @"It's Probably So",
+                            @"All the signs say Yes",
+                            @"The Stars are not on your Side",
+                            @"No!",
+                            @"Not Now, Stars are Doubtful",
+                            @"Ask again tomorrow",
+                            @"Ask again in the Evening",
+                            @"Inconclusive", nil];
+    
+    self.predictionLabel.text = [predictions objectAtIndex:1];
+
     self.predictionLabel.textColor = [UIColor redColor];
     
     NSLog(@"\nButtonPressed");
