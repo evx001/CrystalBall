@@ -46,7 +46,7 @@
                             @"Ask again in the Evening",
                             @"Inconclusive", nil];
     
-    self.predictionLabel.text = [predictions objectAtIndex:1];
+    self.predictionLabel.text = [predictions objectAtIndex:3];
 
     self.predictionLabel.textColor = [UIColor redColor];
     
