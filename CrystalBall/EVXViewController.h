@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EVXViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+- (IBAction)buttonPressed;
 
 @end
