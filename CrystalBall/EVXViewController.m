@@ -26,6 +26,10 @@
                             @"Ask again tomorrow",
                             @"Ask again in the Evening",
                             @"Inconclusive", nil];
+
+
+
+    self.predictionLabel = [[NSArray alloc]initWithObjects:[UIColor redColor], nil];
 }
 
 // frames demo
@@ -47,8 +51,9 @@
     int random = arc4random_uniform(self.predictions.count);
     
     self.predictionLabel.text = [self.predictions objectAtIndex:random];
-
-    self.predictionLabel.textColor = [UIColor redColor];
+    // our randomColor
+    int randomColor = arc4random_uniform(self.predictions.count);
+    self.predictionLabel.textColor = [self.predictions objectAtIndex:randomColor];
     
     NSLog(@"\nButtonPressed");
 }
