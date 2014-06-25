@@ -26,6 +26,13 @@
                             @"Ask again tomorrow",
                             @"Ask again in the Evening",
                             @"Inconclusive", nil];
+
+
+    //Switch to the implementation file. Within the 'viewDidLoad' method allocate and initialize the 'quotes' property to the following quotes: 'Haters gonna hate', 'Life is simple, not easy', 'Winners never quit, quitters never win'.
+
+    self.quotes = [[NSArray alloc]initWithObjects:@"Haters gonna hate",@"Life is simple, not easy", @"Winners never quit, quitters never win",nil];
+
+    self.quoteLabel.text = [self.quotes objectAtIndex:1];
 }
 
 // frames demo
