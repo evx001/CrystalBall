@@ -44,12 +44,14 @@
 // [lblRow setTextColor: [UIColor redColor]];
 // created with viewController.h (IB)Action ....
 - (IBAction)buttonPressed {
-
+    int random = arc4random_uniform(self.predictions.count);
     
-    self.predictionLabel.text = [self.predictions objectAtIndex:3];
+    self.predictionLabel.text = [self.predictions objectAtIndex:random];
 
     self.predictionLabel.textColor = [UIColor redColor];
     
     NSLog(@"\nButtonPressed");
 }
 @end
+
+// Create an NSArray of [UIColor] objects and change the color of the predictionLabel text randomly when the buttonPressed method is called.
