@@ -55,9 +55,10 @@
     UIColor *cyanColor  =   [UIColor cyanColor];
     UIColor *orangeColor =  [UIColor orangeColor];
     UIColor *greenColor =   [UIColor greenColor];
-    UIColor *yellowColor =   [UIColor yellowColor];
-
-    NSArray *arrayColors = @[redColor,blackColor,blueColor,brownColor,cyanColor,orangeColor,yellowColor,greenColor];
+    UIColor *grayColor =   [UIColor grayColor];
+    UIColor *magentaColor =   [UIColor magentaColor];
+    UIColor *purpleColor =   [UIColor purpleColor];
+    NSArray *arrayColors = @[purpleColor,magentaColor,redColor,blackColor,blueColor,brownColor,cyanColor,orangeColor,grayColor,greenColor];
 
     int random = arc4random_uniform(self.predictions.count);
     
