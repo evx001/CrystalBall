@@ -10,6 +10,7 @@
 
 @interface EVXViewController ()
 
+
 @end
 
 @implementation EVXViewController
@@ -28,8 +29,7 @@
                             @"Inconclusive", nil];
 
 
-
-    self.predictionLabel = [[NSArray alloc]initWithObjects:[UIColor redColor], nil];
+//    NSLog(@"%@",arrayColors);
 }
 
 // frames demo
@@ -48,14 +48,26 @@
 // [lblRow setTextColor: [UIColor redColor]];
 // created with viewController.h (IB)Action ....
 - (IBAction)buttonPressed {
+    UIColor *redColor =     [UIColor redColor];
+    UIColor *blueColor =    [UIColor blueColor];
+    UIColor *brownColor =   [UIColor brownColor];
+    UIColor *blackColor =   [UIColor blackColor];
+    UIColor *cyanColor  =   [UIColor cyanColor];
+    UIColor *orangeColor =  [UIColor orangeColor];
+    UIColor *greenColor =   [UIColor greenColor];
+    UIColor *yellowColor =   [UIColor yellowColor];
+
+    NSArray *arrayColors = @[redColor,blackColor,blueColor,brownColor,cyanColor,orangeColor,yellowColor,greenColor];
+
     int random = arc4random_uniform(self.predictions.count);
     
     self.predictionLabel.text = [self.predictions objectAtIndex:random];
-    // our randomColor
-    int randomColor = arc4random_uniform(self.predictions.count);
-    self.predictionLabel.textColor = [self.predictions objectAtIndex:randomColor];
-    
-    NSLog(@"\nButtonPressed");
+
+    int randomColor = arc4random_uniform(arrayColors.count);
+    self.predictionLabel.textColor = [arrayColors objectAtIndex:randomColor];
+//    
+//    NSLog(@"\nButtonPressed");
+//    NSLog(@"%@",arrayColors);
 }
 @end
 

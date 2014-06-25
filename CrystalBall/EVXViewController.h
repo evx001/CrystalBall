@@ -11,6 +11,7 @@
 @interface EVXViewController : UIViewController
 @property (strong, nonatomic) NSArray *predictions; 
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+
 - (IBAction)buttonPressed;
 
 @end
