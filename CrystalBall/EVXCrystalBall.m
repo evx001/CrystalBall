@@ -30,3 +30,5 @@
     return [self.predictions objectAtIndex:random];
 }
 @end
+
+// Modify the CrystalBall class to work without the @property predictions. 
