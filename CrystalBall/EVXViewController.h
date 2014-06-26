@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class EVXCrystalBall;
 @interface EVXViewController : UIViewController
-@property (strong, nonatomic) NSArray *predictions; 
+@property (strong, nonatomic) EVXCrystalBall *crystalBall;
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 
 - (IBAction)buttonPressed;

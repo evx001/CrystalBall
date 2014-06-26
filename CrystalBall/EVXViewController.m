@@ -7,7 +7,7 @@
 //
 
 #import "EVXViewController.h"
-
+#import "EVXCrystalBall.h"
 @interface EVXViewController ()
 
 
@@ -18,15 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.predictions = [[NSArray alloc]initWithObjects:@"It is a Certainty",
-                            @"It's Probably So",
-                            @"All the signs say Yes",
-                            @"The Stars are not on your Side",
-                            @"No!",
-                            @"Not Now, Stars are Doubtful",
-                            @"Ask again tomorrow",
-                            @"Ask again in the Evening",
-                            @"Inconclusive", nil];
+    self.crystalBall = [[EVXCrystalBall alloc]init];
 
 
 //    NSLog(@"%@",arrayColors);
@@ -58,11 +50,12 @@
     UIColor *grayColor =   [UIColor grayColor];
     UIColor *magentaColor =   [UIColor magentaColor];
     UIColor *purpleColor =   [UIColor purpleColor];
+
     NSArray *arrayColors = @[purpleColor,magentaColor,redColor,blackColor,blueColor,brownColor,cyanColor,orangeColor,grayColor,greenColor];
 
-    int random = arc4random_uniform(self.predictions.count);
+  //  int random = arc4random_uniform(self.predictions.count);
     
-    self.predictionLabel.text = [self.predictions objectAtIndex:random];
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
 
     int randomColor = arc4random_uniform(arrayColors.count);
     self.predictionLabel.textColor = [arrayColors objectAtIndex:randomColor];

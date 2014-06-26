@@ -22,6 +22,7 @@
 		6003A77E1957A00600B9B8C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003A77C1957A00600B9B8C9 /* InfoPlist.strings */; };
 		6003A7801957A00600B9B8C9 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003A77F1957A00600B9B8C9 /* CrystalBallTests.m */; };
 		607FD1E619598EC6003442DD /* CIMG0364 copy.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 607FD1E519598EC6003442DD /* CIMG0364 copy.JPG */; };
+		60A3B6B2195C01B30018010D /* EVXCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A3B6B1195C01B30018010D /* EVXCrystalBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		6003A77D1957A00600B9B8C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003A77F1957A00600B9B8C9 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
 		607FD1E519598EC6003442DD /* CIMG0364 copy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CIMG0364 copy.JPG"; sourceTree = "<group>"; };
+		60A3B6B0195C01B30018010D /* EVXCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVXCrystalBall.h; sourceTree = "<group>"; };
+		60A3B6B1195C01B30018010D /* EVXCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVXCrystalBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		6003A75A1957A00600B9B8C9 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
+				60A3B6B0195C01B30018010D /* EVXCrystalBall.h */,
+				60A3B6B1195C01B30018010D /* EVXCrystalBall.m */,
 				6003A7661957A00600B9B8C9 /* Main.storyboard */,
 				6003A7691957A00600B9B8C9 /* EVXViewController.h */,
 				6003A76A1957A00600B9B8C9 /* EVXViewController.m */,
@@ -257,6 +262,7 @@
 				6003A7651957A00600B9B8C9 /* EVXAppDelegate.m in Sources */,
 				6003A76B1957A00600B9B8C9 /* EVXViewController.m in Sources */,
 				6003A7611957A00600B9B8C9 /* main.m in Sources */,
+				60A3B6B2195C01B30018010D /* EVXCrystalBall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
