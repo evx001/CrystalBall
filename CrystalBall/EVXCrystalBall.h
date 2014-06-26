@@ -11,6 +11,9 @@
 @interface EVXCrystalBall : NSObject{
     NSArray *_predictions;
 }
-@property (strong, nonatomic,readonly) NSArray *predictions;
--(NSString *)randomPrediction;
+//@property (strong, nonatomic,readonly) NSArray *predictions;
+//-(NSString *)randomPrediction;
+
+@property (strong, nonatomic) NSArray *quotes;
+
 @end
