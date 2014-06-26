@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface EVXCrystalBall : NSObject{
+@interface EVXCrystalBall : NSObject
+{
     NSArray *_predictions;
 }
 @property (strong, nonatomic,readonly) NSArray *predictions;
