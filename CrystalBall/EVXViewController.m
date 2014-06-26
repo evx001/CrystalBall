@@ -37,8 +37,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-// [lblRow setTextColor: [UIColor redColor]];
-// created with viewController.h (IB)Action ....
+
 - (IBAction)buttonPressed {
     UIColor *redColor =     [UIColor redColor];
     UIColor *blueColor =    [UIColor blueColor];
