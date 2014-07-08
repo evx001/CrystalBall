@@ -13,25 +13,32 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunEmerging003i.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nvl-8R-4hl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunEmerging003i.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nvl-8R-4hl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try Me " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" highlighted="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2b8-OD-Ue5">
-                                <rect key="frame" x="20" y="220" width="280" height="136"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try Me " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" highlighted="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2b8-OD-Ue5">
+                                <rect key="frame" x="20" y="220" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <rect key="contentStretch" x="0.59999999999999998" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="w1W-hI-scW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
                                 <color key="textColor" red="0.57557744570000002" green="0.0" blue="0.088149265379999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFW-1P-ABp">
-                                <rect key="frame" x="20" y="440" width="261" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFW-1P-ABp">
+                                <rect key="frame" x="20" y="411" width="280" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="K4g-3r-Gye"/>
+                                    <constraint firstAttribute="width" constant="280" id="d7I-AF-UQi"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="button-off">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,6 +50,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2b8-OD-Ue5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="9rP-8W-jlQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Nvl-8R-4hl" secondAttribute="bottom" id="Gcp-hA-aaZ"/>
+                            <constraint firstItem="Nvl-8R-4hl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="JTA-JH-1q8"/>
+                            <constraint firstAttribute="centerX" secondItem="2b8-OD-Ue5" secondAttribute="centerX" id="NMW-j7-LJC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KFW-1P-ABp" secondAttribute="bottom" constant="20" id="R1k-TF-Jnx"/>
+                            <constraint firstItem="2b8-OD-Ue5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Rqt-O7-mQk"/>
+                            <constraint firstAttribute="bottom" secondItem="Nvl-8R-4hl" secondAttribute="bottom" id="VIE-gv-eyx"/>
+                            <constraint firstAttribute="bottom" secondItem="Nvl-8R-4hl" secondAttribute="bottom" id="akW-7w-oXj"/>
+                            <constraint firstAttribute="trailing" secondItem="KFW-1P-ABp" secondAttribute="trailing" constant="20" id="dNR-HS-czw"/>
+                            <constraint firstAttribute="centerX" secondItem="2b8-OD-Ue5" secondAttribute="centerX" id="dge-hm-4RH"/>
+                            <constraint firstItem="2b8-OD-Ue5" firstAttribute="centerY" secondItem="Nvl-8R-4hl" secondAttribute="centerY" constant="2" id="dia-9F-grR"/>
+                            <constraint firstItem="KFW-1P-ABp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gMM-S2-hYR"/>
+                            <constraint firstAttribute="trailing" secondItem="Nvl-8R-4hl" secondAttribute="trailing" id="gvl-El-5xt"/>
+                            <constraint firstAttribute="centerX" secondItem="KFW-1P-ABp" secondAttribute="centerX" id="lwS-RT-b1W"/>
+                            <constraint firstAttribute="bottom" secondItem="Nvl-8R-4hl" secondAttribute="bottom" id="qjv-mX-NpA"/>
+                            <constraint firstItem="Nvl-8R-4hl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="rBc-Fp-MGc"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="predictionLabel" destination="2b8-OD-Ue5" id="P8R-yw-vnX"/>
@@ -60,6 +85,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
